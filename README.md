@@ -1,3 +1,5 @@
+Here's the `README.md` file with the updated API Endpoints section, including a link to the API documentation with additional details:
+
 ---
 
 # Backend and Bot Project
@@ -8,10 +10,12 @@ This project combines an Express.js backend server with a Telegram bot. The serv
 
 - [Installation](#installation)
 - [Environment Variables](#environment-variables)
-- [Running the Project])
+- [Running the Project](#running-the-project)
 - [Project Structure](#project-structure)
 - [Bot Functionality](#bot-functionality)
-- [API Endpoints](#https://jamolweb.github.io/abacus-api-routes/)
+- [API Endpoints](#api-endpoints)
+- [API Documentation](#api-documentation)
+- [License](#license)
 
 ## Installation
 
@@ -99,12 +103,16 @@ The Telegram bot performs the following tasks:
 
 The backend server exposes the following endpoints:
 
-- **/requests**: Handles incoming requests from users.
-- **/done-requests**: Manages requests that have been completed.
-- **/auth**: Manages authentication.
+- **/requests**: Handles incoming requests from users. Users can submit their requests, which are stored in the database for later processing.
+- **/done-requests**: Manages requests that have been completed. This endpoint allows tracking and management of requests that have been resolved or addressed.
+- **/auth**: Manages authentication. This endpoint handles user authentication, including login and token generation for secure access to protected resources.
+
+## API Documentation
+
+For detailed information on how to interact with the API, including request formats, response structures, and example usage, please refer to the full API documentation available [here](https://jamolweb.github.io/abacus-api-routes/).
+
+This documentation provides comprehensive details on each endpoint, including supported HTTP methods, expected parameters, and potential error responses. It’s a valuable resource for developers integrating with this backend or extending its functionality.
 
 ## License
 
 This project is licensed under the ISC License. See the LICENSE file for more details.
-
----
