@@ -1,0 +1,45 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Admin {
+  id       String @id @default(uuid())
+  username String @unique
+  password String
+
+  @@map("admin")
+}
+
+model Request {
+  id String @id @default(uuid())
+
+  firstName               String
+  lastName                String
+  summary                 String
+  phoneNumberFromTelegram String
+  phoneNumber             String
+  createdAt               String
+  requestNumber           Int
+  globalRequestNumber     Int
+
+  @@map("requests")
+}
+
+model DoneRequest {
+  id                      String @id @default(uuid())
+  firstName               String
+  lastName                String
+  summary                 String
+  phoneNumberFromTelegram String
+  phoneNumber             String
+  requestedAt             String
+  requestNumber           Int
+  createdAt               String
+
+  @@map("doneRequests")
+}
