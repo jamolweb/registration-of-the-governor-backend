@@ -1,7 +1,3 @@
-Here's the `README.md` file with the updated API Endpoints section, including a link to the API documentation with additional details:
-
----
-
 # Backend and Bot Project
 
 This project combines an Express.js backend server with a Telegram bot. The server handles API requests, while the bot interacts with users on Telegram. The application uses Prisma ORM for database interactions and supports secure user data handling through environment variables.
